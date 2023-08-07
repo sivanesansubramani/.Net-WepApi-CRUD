@@ -101,7 +101,7 @@ namespace PersonalDataWebAPI_CRUD.Repository
 
 
 
-                connectionObject.Open(); // Age = @Age, Address = @Address where id = @id
+                connectionObject.Open(); 
 
                 connectionObject.Execute($"  exec UbdatePersonalBio '{bio.Name}','{bio.LastName}',{bio.Age},'{bio.Address}','{bio.id}' ");
 
